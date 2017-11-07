@@ -1,0 +1,804 @@
+/*   
+Theme Name: Velti Large Scale Competition - Social LSC
+Description: Velti's Next Generation Social LSC Game
+Author: Velti Large Scale Competition - UI Design Department
+Author URI: http://www.velti.com/
+Copyright: Velti
+Version: 4.2.4
+*/
+
+/* ------------------------------------------------- */
+/*                       NOTE!                       */
+/*       This Style Sheet is dependant on...         */
+/*                     site.css                      */
+/* ------------------------------------------------- */
+
+/* new Linux- and Windows-friendly sans-serif font stack */
+body { background:#FFFFFF; height:100%; color:#FFFFFF; font:14px 'Open Sans', sans-serif; overflow-x:hidden; overflow-y:auto; }
+
+/* --------------------- No Logo Left Help NAVigation Right ------------------- */
+
+#header-logo-left-outer {
+	float:left; position:relative; width:29%; height:70px; top:0px; left:0px; padding:0%; margin:0%; background:#FFFFFF;
+}
+#header-logo-left-outer:before { content:""; background:#FFFFFF; position:absolute; top:0; bottom:0; width:9999px; }
+#header-logo-left-outer:before { right: 100%; }
+#header-logo-left-outer:nth-of-type(1), #header-logo-left-outer:nth-of-type(1):before { background:#FFFFFF; }
+
+#header-logo-left-outer img {
+	max-width:100%; height:auto; padding:3% 0%;
+}
+
+#header-nologo-helpnavright-outer {
+	float:left; position:relative; top:0px; left:0px; width:71%; height:70px; padding:0%; margin:0%; background:#FFFFFF;
+}
+#header-nologo-helpnavright-outer:after { content:""; background:#FFFFFF; position:absolute; top:0; bottom:0; width:9999px; }
+#header-nologo-helpnavright-outer:nth-of-type(1), #header-nologo-helpnavright-outer:after { background:#FFFFFF; }
+#header-nologo-helpnavright-outer:after { left: 100%; }
+
+.helpnav-logged-in-mobile {
+	display:none;
+}
+
+#helpnav ul {
+	float:right; height:auto; line-height:47px; margin-right:10px;
+}
+
+#helpnav ul li {
+	float:left; position:relative; top:0%; left:0%; width:auto; height:auto; padding:0%; margin:0px 10px;
+}
+
+#helpnav li a {
+	display:block; position:relative; top:0px; left:0px; width:100%; height:auto; line-height:67px; padding:0px 10px; margin:0px;
+}
+
+#helpnav li a img {
+	padding-left:20px; vertical-align:middle;
+}
+
+#helpnav li.helpnav-logged-in, #header-logo-left-outer p {
+	margin-left:0px;
+}
+
+#helpnav li.helpnav-logged-in a, #header-logo-left-outer p a {
+	color:#2590c4;
+}
+
+#helpnav li.helpnav-logged-in a:hover, #header-logo-left-outer p a:hover {
+	color:#E10B1C;
+}
+
+#helpnav li.helpnav-logged-in a img, #header-logo-left-outer p a img {
+	padding-left:0px; padding-right:20px; vertical-align:middle;
+}
+
+#helpnav li a:hover {
+	cursor:pointer;
+}
+
+.sticky {
+	position: fixed;
+	width:980px;
+	top: 15px;
+	animation:thedrop 1s 1;
+	-moz-animation:thedrop 1s 1;
+	-webkit-animation:thedrop 1s 1;
+}
+
+/* --------------------- MAIN NAVigation ------------------- */
+
+#mainnav-nologo-outer {
+	position:fixed; top:0px; left:0px; width:67px; height:auto; padding:0%; margin:0%; margin-top:8%; margin-left:2%; z-index:10000;
+}
+
+#mainnav ul {
+	float:left; position:relative; top:0%; right:0%; width:100%; height:100%;
+}
+
+#mainnav li {
+	float:left; position:relative; top:0%; left:0%; width:auto; height:auto; margin:1% 0%;
+}
+
+li .mainnav-home {
+	text-indent:-9999px; background:url(../images/left-main-nav-home.png) no-repeat; background-position:-9999px;
+}
+
+li .mainnav-home a {
+	display:block; position:relative; top:0px; left:0px; width:67px; height:67px; background:url(../images/left-main-nav-home.png) no-repeat center; 
+}
+
+li .mainnav-home a:hover, li.active .mainnav-home a {
+	cursor:pointer; background:url(../images/left-main-nav-home-hover.png) no-repeat center;
+}
+
+li .mainnav-participate {
+	text-indent:-9999px; background:url(../images/left-main-nav-participate.png) no-repeat; background-position:-9999px;
+}
+
+li .mainnav-participate a {
+	display:block; position:relative; top:0px; left:0px; width:67px; height:67px; background:url(../images/left-main-nav-participate.png) no-repeat center; 
+}
+
+li .mainnav-participate a:hover, li.active .mainnav-participate a {
+	cursor:pointer; background:url(../images/left-main-nav-participate-hover.png) no-repeat center;
+}
+
+li .mainnav-prizes {
+	text-indent:-9999px; background:url(../images/left-main-nav-prizes.png) no-repeat; background-position:-9999px;
+}
+
+li .mainnav-prizes a {
+	display:block; position:relative; top:0px; left:0px; width:67px; height:67px; background:url(../images/left-main-nav-prizes.png) no-repeat center; 
+}
+
+li .mainnav-prizes a:hover, li.active .mainnav-prizes a {
+	cursor:pointer; background:url(../images/left-main-nav-prizes-hover.png) no-repeat center;
+}
+
+li .mainnav-tips {
+	text-indent:-9999px; background:url(../images/left-main-nav-tips.png) no-repeat; background-position:-9999px;
+}
+
+li .mainnav-tips a {
+	display:block; position:relative; top:0px; left:0px; width:67px; height:67px; background:url(../images/left-main-nav-tips.png) no-repeat center; 
+}
+
+li .mainnav-tips a:hover, li.active .mainnav-tips a {
+	cursor:pointer; background:url(../images/left-main-nav-tips-hover.png) no-repeat center;
+}
+
+li .mainnav-winners {
+	text-indent:-9999px; background:url(../images/left-main-nav-winners.png) no-repeat; background-position:-9999px;
+}
+
+li .mainnav-winners a {
+	display:block; position:relative; top:0px; left:0px; width:67px; height:67px; background:url(../images/left-main-nav-winners.png) no-repeat center; 
+}
+
+li .mainnav-winners a:hover, li.active .mainnav-winners a {
+	cursor:pointer; background:url(../images/left-main-nav-winners-hover.png) no-repeat center;
+}
+
+
+
+
+
+
+/* -------------- Sidebar NAV ------------------------ */
+
+.sidebar-overlay {
+	position:fixed; top:0px; left:0px; width:100%; height:100%; background:url(../images/overlay-image-blank.png); padding:0px; margin:0px; z-index:20002;
+}
+
+.sidebar-nav-container {
+	position:fixed; top:0px; right:-267px;  width:267px; height:100%; background-color:rgba(235, 33, 46, 0.8); -webkit-box-shadow:inset 2px 2px 5px 0px #C20918; box-shadow:inset 2px 2px 5px 0px #C20918; padding:0%; margin:0%; z-index:20001;
+}
+
+.close-sidebar-nav {
+	display:table; position:relative; top:0px; left:0px; width:90%; height:auto; background:#e00a1c; padding:5%; margin:0%;
+}
+
+.close-sidebar-nav p {
+	line-height:290%; display:table-cell; vertical-align:middle;
+}
+
+.close-sidebar-nav p a {
+	display:block;
+}
+
+.close-sidebar-nav p a:hover {
+	cursor:pointer;
+}
+
+.close-sidebar-nav img {
+	max-width:100%; height:auto;
+}
+
+.sidebar-nav-pages {
+	position:relative; top:0px; left:0px; width:90%; height:100%; padding:5%; padding-top:0%; margin:0%;
+}
+
+.sidebar-mainnav li a, .sidebar-terms a {
+	display:block; color:#FFFFFF; line-height:200%; text-transform:uppercase; margin:1% 0%;
+}
+
+.sidebar-mainnav li a:hover, .sidebar-terms a:hover {
+	color:#C3C1C1;
+}
+
+.sidebar-registration-button {
+	clear:both; position:relative; top:0%; left:0%; width:70%; height:auto; padding:0%; margin:8% auto;
+}
+
+.sidebar-registration-button a {
+	display:block; width:100%; height:auto; background:url(../images/blue-button-bkg.png) repeat-x left; color:#FFFFFF; line-height:42px; -webkit-border-radius:22px; border-radius:22px; border:3px solid #e00a1c;
+}
+	
+.sidebar-registration-button a:hover {
+	color:#FFFFFF; cursor:pointer;
+}
+
+li.sidebar-area-locked {
+	display:block; width:90%; background:url(../images/sidebar-game-lock.png) no-repeat right; line-height:200%; text-transform:uppercase; padding-right:10%; margin:1% 0%; color:#C3C1C1;
+}
+
+.sidebar-footer {
+	position:absolute; bottom:100px; left:0%; width:90%; padding:5%; margin:0%;
+}
+
+.sidebar-copyrights {
+	color:#FFFFFF;
+}
+
+.sidebar-terms {
+	margin-top:12%;
+}
+
+/* -------------- Sidebar LOGIN ------------------------ */
+
+.login-overlay {
+	position:fixed; top:0px; left:0px; width:100%; height:100%; background:url(../images/overlay-image-blank.png); padding:0px; margin:0px; z-index:20002;
+}
+
+.login-nav-container {
+	position:fixed; top:0px; right:-267px;  width:267px; height:100%; background-color:rgba(235, 33, 46, 0.8); -webkit-box-shadow:inset 2px 2px 5px 0px #C20918; box-shadow:inset 2px 2px 5px 0px #C20918; padding:0%; margin:0%; z-index:20001;
+}
+
+.close-login-nav {
+	position:relative; top:0px; left:0px; width:90%; height:auto; background:#e00a1c; padding:5%; margin:0%;
+}
+
+.close-login-nav-bottom {
+	position:relative; top:0px; left:0px; width:100%; padding:0%; margin:0%; line-height:290%;
+}
+
+.close-login-nav-top {
+	position:absolute; top:0px; left:0px; width:90%; padding:5%; margin:0%;
+}
+
+.close-login-nav-top h1 a {
+	display:block; line-height:120%;
+}
+
+.close-login-nav-top h1 a:hover {
+	cursor:pointer;
+}
+
+.close-login-nav-top img {
+	max-width:100%; height:auto;
+}
+
+.login-nav-pages {
+	position:relative; top:0px; left:0px; width:90%; height:100%; padding:5%; margin:0%;
+}
+
+.login-form-container {
+	padding-bottom:10%; border-bottom:2px solid #b20e19;
+}
+
+/* -------------- Sidebar LOGOUT ------------------------ */
+
+.logout-overlay {
+	position:fixed; top:0px; left:0px; width:100%; height:100%; background:url(../images/overlay-image-blank.png); padding:0px; margin:0px; z-index:20002;
+}
+
+.logout-nav-container {
+	position:fixed; top:0px; right:-267px;  width:267px; height:100%; background-color:rgba(235, 33, 46, 0.8); -webkit-box-shadow:inset 2px 2px 5px 0px #C20918; box-shadow:inset 2px 2px 5px 0px #C20918; padding:0%; margin:0%; z-index:20001;
+}
+
+.close-logout-nav {
+	position:relative; top:0px; left:0px; width:90%; height:auto; background:#e00a1c; padding:5%; margin:0%;
+}
+
+.close-logout-nav-bottom {
+	position:relative; top:0px; left:0px; width:100%; padding:0%; margin:0%; line-height:290%;
+}
+
+.close-logout-nav-top {
+	position:absolute; top:0px; left:0px; width:90%; padding:5%; margin:0%;
+}
+
+.close-logout-nav-top h1 a {
+	display:block; line-height:120%;
+}
+
+.close-logout-nav-top h1 a:hover {
+	cursor:pointer;
+}
+
+.close-logout-nav-top img {
+	max-width:100%; height:auto;
+}
+
+.logout-nav-pages {
+	position:relative; top:0px; left:0px; width:90%; height:100%; padding:5%; margin:0%;
+}
+
+.logout-form-container {
+	padding-bottom:10%; border-bottom:2px solid #b20e19;
+}
+
+/* -------------- Sidebar WALLPAPER SEND-TO-A-FRIEND ------------------------ */
+
+.wallpaper-send-to-a-friend-overlay {
+	position:fixed; top:0px; left:0px; width:100%; height:100%; background:url(../images/overlay-image-blank.png); padding:0px; margin:0px; z-index:20002;
+}
+
+.wallpaper-send-to-a-friend-nav-container {
+	position:fixed; top:0px; right:-267px;  width:267px; height:100%; background-color:rgba(235, 33, 46, 0.8); -webkit-box-shadow:inset 2px 2px 5px 0px #C20918; box-shadow:inset 2px 2px 5px 0px #C20918; padding:0%; margin:0%; z-index:20001;
+}
+
+.close-wallpaper-send-to-a-friend-nav {
+	position:relative; top:0px; left:0px; width:90%; height:auto; background:#e00a1c; padding:5%; margin:0%;
+}
+
+.close-wallpaper-send-to-a-friend-nav-bottom {
+	position:relative; top:0px; left:0px; width:100%; padding:0%; margin:0%; line-height:290%;
+}
+
+.close-wallpaper-send-to-a-friend-nav-top {
+	position:absolute; top:0px; left:0px; width:90%; padding:5%; margin:0%;
+}
+
+.close-wallpaper-send-to-a-friend-nav-top h1 a {
+	display:block; line-height:120%;
+}
+
+.close-wallpaper-send-to-a-friend-nav-top h1 a:hover {
+	cursor:pointer;
+}
+
+.close-wallpaper-send-to-a-friend-nav-top img {
+	max-width:100%; height:auto;
+}
+
+.wallpaper-send-to-a-friend-nav-pages {
+	position:relative; top:0px; left:0px; width:90%; height:100%; padding:5%; margin:0%;
+}
+
+.wallpaper-send-to-a-friend-form-container {
+	padding-bottom:10%; border-bottom:2px solid #b20e19;
+}
+
+/* -------------- Sidebar INITIATE ------------------------ */
+
+.initiate-overlay {
+	position:fixed; top:0px; left:0px; width:100%; height:100%; background:url(../images/overlay-image-blank.png); padding:0px; margin:0px; z-index:20002;
+}
+
+.initiate-nav-container {
+	position:fixed; top:0px; right:-267px;  width:267px; height:100%; background-color:rgba(235, 33, 46, 0.8); -webkit-box-shadow:inset 2px 2px 5px 0px #C20918; box-shadow:inset 2px 2px 5px 0px #C20918; padding:0%; margin:0%; z-index:20001;
+}
+
+.close-initiate-nav {
+	position:relative; top:0px; left:0px; width:90%; height:auto; background:#e00a1c; padding:5%; margin:0%;
+}
+
+.close-initiate-nav-bottom {
+	position:relative; top:0px; left:0px; width:100%; padding:0%; margin:0%; line-height:290%;
+}
+
+.close-initiate-nav-top {
+	position:absolute; top:0px; left:0px; width:90%; padding:5%; margin:0%;
+}
+
+.close-initiate-nav-top h1 a {
+	display:block; line-height:120%;
+}
+
+.close-initiate-nav-top h1 a:hover {
+	cursor:pointer;
+}
+
+.close-initiate-nav-top img {
+	max-width:100%; height:auto;
+}
+
+/* -------------- Sidebar CONFIRM ------------------------ */
+
+.confirm-overlay {
+	position:fixed; top:0px; left:0px; width:100%; height:100%; background:url(../images/overlay-image-blank.png); padding:0px; margin:0px; z-index:20002;
+}
+
+.confirm-nav-container {
+	position:fixed; top:0px; right:-267px;  width:267px; height:100%; background-color:rgba(235, 33, 46, 0.8); -webkit-box-shadow:inset 2px 2px 5px 0px #C20918; box-shadow:inset 2px 2px 5px 0px #C20918; padding:0%; margin:0%; z-index:20001;
+}
+
+.close-confirm-nav {
+	position:relative; top:0px; left:0px; width:90%; height:auto; background:#e00a1c; padding:5%; margin:0%;
+}
+
+.close-confirm-nav-bottom {
+	position:relative; top:0px; left:0px; width:100%; padding:0%; margin:0%; line-height:290%;
+}
+
+.close-confirm-nav-top {
+	position:absolute; top:0px; left:0px; width:90%; padding:5%; margin:0%;
+}
+
+.close-confirm-nav-top h1 a {
+	display:block; line-height:120%;
+}
+
+.close-confirm-nav-top h1 a:hover {
+	cursor:pointer;
+}
+
+.close-confirm-nav-top img {
+	max-width:100%; height:auto;
+}
+
+span.confirm-validate-error {
+	float:left; position:relative; top:0%; left:-70%; background-color:rgba(235, 33, 46, 0.8); padding:1.5%; margin:0%; margin-top:-30px;
+}
+
+span.confirm-validate-error-long {
+	float:left; position:relative; top:0%; left:-70%; background-color:rgba(235, 33, 46, 0.8); padding:1.5%; margin:0%; margin-top:-80px;
+}
+
+
+
+/* -------------- Sidebar PASSWORD FORGOTTEN ------------------------ */
+
+.password-forgotten-overlay {
+	position:fixed; top:0px; left:0px; width:100%; height:100%; background:url(../images/overlay-image-blank.png); padding:0px; margin:0px; z-index:20002;
+}
+
+.password-forgotten-nav-container {
+	position:fixed; top:0px; right:-267px;  width:267px; height:100%; background-color:rgba(235, 33, 46, 0.8); -webkit-box-shadow:inset 2px 2px 5px 0px #C20918; box-shadow:inset 2px 2px 5px 0px #C20918; padding:0%; margin:0%; z-index:20001;
+}
+
+.close-password-forgotten-nav {
+	position:relative; top:0px; left:0px; width:90%; height:auto; background:#e00a1c; padding:5%; margin:0%;
+}
+
+.close-password-forgotten-nav-bottom {
+	position:relative; top:0px; left:0px; width:100%; padding:0%; margin:0%; line-height:290%;
+}
+
+.close-password-forgotten-nav-top {
+	position:absolute; top:0px; left:0px; width:90%; padding:5%; margin:0%;
+}
+
+.close-password-forgotten-nav-top h1 a {
+	display:block; line-height:120%;
+}
+
+.close-password-forgotten-nav-top h1 a:hover {
+	cursor:pointer;
+}
+
+.close-password-forgotten-nav-top img {
+	max-width:100%; height:auto;
+}
+
+/* -------------- Sidebar CHANGE PASSWORD ------------------------ */
+
+.change-password-overlay {
+	position:fixed; top:0px; left:0px; width:100%; height:100%; background:url(../images/overlay-image-blank.png); padding:0px; margin:0px; z-index:20002;
+}
+
+.change-password-nav-container {
+	position:fixed; top:0px; right:-267px;  width:267px; height:100%; background-color:rgba(235, 33, 46, 0.8); -webkit-box-shadow:inset 2px 2px 5px 0px #C20918; box-shadow:inset 2px 2px 5px 0px #C20918; padding:0%; margin:0%; z-index:20001;
+}
+
+.close-change-password-nav {
+	position:relative; top:0px; left:0px; width:90%; height:auto; background:#e00a1c; padding:5%; margin:0%;
+}
+
+.close-change-password-nav-bottom {
+	position:relative; top:0px; left:0px; width:100%; padding:0%; margin:0%; line-height:290%;
+}
+
+.close-change-password-nav-top {
+	position:absolute; top:0px; left:0px; width:90%; padding:5%; margin:0%;
+}
+
+.close-change-password-nav-top h1 a {
+	display:block; line-height:120%;
+}
+
+.close-change-password-nav-top h1 a:hover {
+	cursor:pointer;
+}
+
+.close-change-password-nav-top img {
+	max-width:100%; height:auto;
+}
+
+/* --------------------- FULL SCREEN Main Banner Index Page ------------------- */
+
+.mainbanner-message-full-screen p {
+	text-align:right;
+}
+
+/* --------------------- Main Banner Index Page ------------------- */
+
+p.mainbanner-button-control {
+	text-align:left;
+}
+
+.mainbanner-message p {
+	text-align:right;
+}
+
+/* --------------------- Main Column 3 Column Layout ------------------- */
+
+.maincolumn-3-column-triple-container {
+	float:left; position:relative; top:0%; left:0%; width:23.33333333333333%; padding:3% 5%; margin:0%;
+}
+
+.maincolumn-3-column-triple-divider {
+	background:url(../images/index-promo-divider.png) no-repeat right;
+}
+
+.info-text-control {
+	text-align:right;
+}
+
+/* -------------- Play Button Area -------------- */
+
+.index-play-button-control {
+	margin:12% auto;
+}
+
+.account-play-button-control {
+	margin:2% auto;
+}
+
+.index-play-button-outer {
+	clear:both; position:relative; top:0px; left:-8px; width:239px; height:66.66666666666667px; padding:0px;
+}
+
+.index-play-button-outer a:hover {
+	text-decoration:none; cursor:pointer;
+}
+
+.index-play-button-outer a .index-play-button {
+	display:block; height:59.33333333333333px; width:221px;
+	background: #60cce8;
+	background: -moz-linear-gradient(top,  #60cce8 0%, #0ab1dd 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#60cce8), color-stop(100%,#0ab1dd));
+	background: -webkit-linear-gradient(top,  #60cce8 0%,#0ab1dd 100%);
+	background: -o-linear-gradient(top,  #60cce8 0%,#0ab1dd 100%);
+	background: -ms-linear-gradient(top,  #60cce8 0%,#0ab1dd 100%);
+	background: linear-gradient(to bottom,  #60cce8 0%,#0ab1dd 100%);
+	color:#FFFFFF; text-shadow:1px 1px 0px #666666; padding:0px; padding-left:14.66666666666667px; margin:0px; -webkit-border-radius:29.66666666666667px; -moz-border-radius:29.66666666666667px; border-radius:29.66666666666667px;
+}
+
+.index-play-button-outer a:hover .index-play-button {
+	text-decoration:none; color:#333333; cursor:pointer; text-shadow:1px 1px 0px #FFFFFF;
+}
+
+.index-play-button-symbol {
+	clear:both; position:relative; top:-4.666666666666667px; left:0px; width:239px; height:66.66666666666667px; background:url(../images/play-symbol.png) no-repeat right; background-size:29.8%; padding:0px; padding-top:4.666666666666667px; margin:0px;
+}
+
+.index-play-button-outer h2, .index-play-button-outer p {
+	width:70%; line-height:100%; padding:0%; margin:0%; 
+}
+
+h2.account-button-control {
+	padding-top:7%;
+}
+
+.index-play-button-outer p {
+	padding-top:10px;
+}
+
+.form-button-control {
+	text-align:right;
+}
+
+.form-error-control {
+	text-align:right;
+}
+
+.maincolumn-1-column-button-control {
+	text-align:left;
+}
+
+select.form-selectfield {
+    float:left; width:36%; color:#000000; background:#FFFFFF; color:#999999; padding:6px 2%; margin:1% 0%; border:0px solid #FFFFFF; -webkit-box-shadow:inset 3px 3px 3px 0px #CCCCCC; box-shadow:inset 3px 3px 3px 0px #CCCCCC; -webkit-appearance:none;
+}
+
+select.details-selectfield {
+    float:left; width:100%; background:#FFFFFF; color:#999999; padding:6px 2%; margin:1% 0%; border:0px solid #FFFFFF; -webkit-box-shadow:inset 3px 3px 3px 0px #CCCCCC; box-shadow:inset 3px 3px 3px 0px #CCCCCC; -webkit-appearance:none;
+}
+
+input.form-textfield-shared {
+    float:left; width:56%; color:#000000; padding:6px 2%; margin:1% 0%; margin-left:4%; border:0px solid #FFFFFF; -webkit-box-shadow:inset 3px 3px 3px 0px #CCCCCC; box-shadow:inset 3px 3px 3px 0px #CCCCCC; -webkit-appearance:none;
+}
+
+input.form-textfield-shared2 {
+    float:left; width:66%; background:#FFFFFF; padding:1.4% 2%; margin-bottom:1%; border:1px solid #00a7d4; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; -webkit-appearance:none;
+}
+
+input.form-textfield-left-shared {
+    float:left; width:26%; background:#FFFFFF; padding:1.4% 2%; margin-bottom:1%; border:1px solid #00a7d4; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; -webkit-appearance:none;
+}
+
+/* ---------------- Custom ReCaptcha ---------------- */
+
+#recaptcha_widget {
+	position:relative; width:100%; padding:0%; margin:0%; margin-bottom:10px; 
+}
+
+.recaptcha-left {
+	float:left; position:relative; top:0px; left:0px; width:83%; padding:0%; margin:0%;
+}
+
+#recaptcha_image {
+	max-width:98%; position:relative;
+}
+
+#recaptcha_image img {
+	max-width:98%; height:auto; background:#FFFFFF; padding:6px 2%; margin:1% 0%; border:0px solid #FFFFFF; -webkit-box-shadow:inset 3px 3px 3px 0px #CCCCCC; box-shadow:inset 3px 3px 3px 0px #CCCCCC;
+}
+
+.recaptcha-left-content {
+	position:relative; width:100%; padding:0%; margin:0%;
+}
+
+input.form-textfield {
+    width:96%; color:#000000; padding:6px 2%; margin:1% 0%; border:0px solid #FFFFFF; -webkit-box-shadow:inset 3px 3px 3px 0px #CCCCCC; box-shadow:inset 3px 3px 3px 0px #CCCCCC; -webkit-appearance:none;
+}
+
+select.account-form-selectfield, select.account-form-selectfield-single {
+	position:relative; width:26%; padding:0.5% 1%; color:999999; margin-bottom:1%; margin-left:1%; border:1px solid #00a7d4; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; -webkit-appearance:none;
+}
+
+.captcha-buttons {
+	float:left; position:relative; top:0px; left:0px; width:16%; height:auto; padding:0%; margin:0%;
+}
+
+.captcha-button-top, .captcha-button-middle-audio, .captcha-button-middle-image, .captcha-button-bottom {
+	position:relative; top:0px; left:0px; padding:0%; width:30px; height:30px; margin:4% 23%; margin-right:0%; margin-bottom:19.5%; text-indent:-9999px;
+}
+
+.captcha-button-top a {
+	display:block; width:30px; height:30px; background:url(../images/captcha-refresh.png) no-repeat center; padding:0%; margin:0%;
+}
+
+.captcha-button-middle-audio a {
+	display:block; width:30px; height:30px; background:url(../images/captcha-audio.png) no-repeat center; padding:0%; margin:0%;
+}
+
+.captcha-button-middle-image a {
+	display:block; width:30px; height:30px; background:url(../images/captcha-text.png) no-repeat center; padding:0%; margin:0%;
+}
+
+.captcha-button-bottom a {
+	display:block; width:30px; height:30px; background:url(../images/captcha-help.png) no-repeat center; padding:0%; margin:0%;
+}
+
+.captcha-button-top a:hover, .captcha-button-middle-audio a:hover, .captcha-button-middle-image a:hover, .captcha-button-bottom a:hover {
+	
+}
+
+
+
+
+
+
+
+
+
+/* Media queries!
+-------------------------------------------------------------------------------*/
+
+@media only screen and (max-width:1200px) {
+	.sidebar-overlay { height:auto; }
+	.sidebar-nav-container { right:-320px; width:320px; overflow-y:scroll; }
+	.login-overlay { height:auto; }
+	.login-nav-container, .initiate-nav-container, .confirm-nav-container, .password-forgotten-nav-container, .change-password-nav-container { right:-320px; width:320px; overflow-y:scroll; }
+	.sidebar-footer { position:relative; bottom:0px; left:0%; width:100%; padding:5% 0%; margin:0%; }
+	span.confirm-validate-error { left:0%; padding:1.5%; margin:0%; margin-top:-30px; }
+	span.confirm-validate-error-long { left:0%; padding:1.5%; margin:0%; margin-top:-80px; }
+}
+
+@media only screen and (max-width: 980px) {
+	.sticky { width:98%; }
+}
+
+@media only screen and (max-width: 920px) {
+	
+}
+
+
+@media only screen and (max-width: 880px) {
+	
+}
+
+
+
+
+
+/* Mobile */
+
+@media handheld, only screen and (max-width: 768px) {
+	
+}
+
+@media handheld, only screen and (max-width: 740px) {
+	#helpnav ul { line-height:47px; margin-right:5px; }
+	#helpnav ul li { margin:0px 5px; }
+	#helpnav li a { line-height:67px; padding:0px 5px; margin:0px; }
+	#helpnav li a img { padding-left:10px; }
+	#helpnav li.helpnav-logged-in a img { padding-right:10px; }
+	.sticky { width:100%; top:15px; }
+}
+
+@media handheld, only screen and (max-width: 624px) {
+	.helpnav-logged-in-mobile { display:block; }
+	.helpnav-logged-in-pc { display:none; }
+	#header-logo-left-outer { clear:both; float:none; position:relative; width:100%; height:auto; top:0px; left:0px; padding:0%; margin:0%; }
+	.helpnav-logged-in-left { float:left; width:37%; padding:4% 0%; margin:0%; }
+	.helpnav-logged-in img { width:10%; height:auto; }
+	.helpnav-logged-in-right { float:left; width:61%; height:auto; padding:2% 0%; padding-right:2%; margin:0%; }
+	.helpnav-logged-in-right p { position:relative; width:100%; line-height:20px; text-align:right; }
+	#header-logo-left-outer p a { padding:0%; margin::0%; line-height:20px; }
+	#header-logo-left-outer p a img { padding-left:0px; padding-right:10px; vertical-align:middle; }
+	#header-nologo-helpnavright-outer { clear:both; float:none; position:relative; top:0px; left:0px; width:100%; height:auto; padding:0%; margin:0%; }
+	#helpnav ul { line-height:37px; margin-right:5px; margin-top:-10%; }
+	#helpnav ul li { margin:0px 5px; }
+	#helpnav li a { line-height:37px; padding:0px 5px; margin:0px; }
+	#helpnav li a img { padding-left:10px; }
+	#helpnav li.helpnav-logged-in a img { padding-right:10px; }
+	.sticky { width:100%; top:15px; }
+}
+
+@media handheld, only screen and (max-width: 480px) {
+	.helpnav-logged-in-left { float:left; width:27%; padding:5.5% 0%; margin:0%; }
+	.helpnav-logged-in-right { float:left; width:71%; padding:2% 0%; padding-right:2%; margin:0%; line-height:20px; }
+	.helpnav-logged-in img { width:8.5%; height:auto; }
+	#helpnav ul { margin-top:-10%; }
+	.sticky { width:100%; top:15px; }
+}
+
+@media handheld, only screen and (max-width: 410px) {
+	.helpnav-logged-in-left { position:relative; top:0%; left:0%; width:30%; height:auto; padding:5% 0%; margin:0%; }
+	.helpnav-logged-in-right { position:relative; top:0%; left:0%; width:67%; height:auto; padding:2% 0%; padding-right:3%; margin:0%; line-height:20px; }
+	.helpnav-logged-in img { width:7.2%; height:auto; }
+	#helpnav ul { margin-top:-11%; }
+	.sidebar-registration-button a { height:30px; line-height:30px; -webkit-border-radius:15px; border-radius:15px; }
+}
+
+@media handheld, only screen and (max-width: 350px) {
+	
+}
+
+@media handheld, only screen and (max-width: 310px) {
+	.helpnav-logged-in img { width:10%; height:auto; }
+	.helpnav-logged-in-left { position:relative; top:0%; left:0%; width:30%; height:auto; padding:0%; padding-bottom:15%; margin:0%; }
+	.header-nologo-helpnavright-outer { position:absolute; top:0px; right:0px; }
+	.helpnav-logged-in-right { position:relative; top:0%; left:0%; width:97%; height:auto; padding:2% 0%; padding-right:3%; margin:0%; line-height:20px; margin-top:-25%; }
+	.helpnav-logged-in-right p { text-align:left; margin-top:10%; }
+	#helpnav ul { line-height:37px; margin-right:2px; margin-top:-30%; }
+	#helpnav ul li { margin:0px 2px; }
+	#helpnav li a { line-height:37px; padding:0px 2px; margin:0px; }
+	#helpnav li a img { padding-left:5px; }
+	#helpnav li.helpnav-logged-in a img { padding-right:5px; }
+	.sidebar-nav-container { right:-320px; width:100%; overflow-y:scroll; }
+	.login-nav-container, .initiate-nav-container, .confirm-nav-container, .password-forgotten-nav-container, .change-password-nav-container { right:-320px; width:100%; overflow-y:scroll; }
+}
+
+@media handheld, only screen and (max-width: 220px) {
+	#helpnav ul { line-height:37px; margin-right:2px; margin-top:-33%; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

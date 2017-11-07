@@ -1,0 +1,50 @@
+/*   
+Theme Name: Velti Large Scale Competition - Social LSC
+Description: Velti's Next Generation Social LSC Game
+Author: Velti Large Scale Competition - UI Department
+Author URI: http://www.velti.com/
+Copyright: Velti
+Version: 4.2.1
+*/
+
+/* ************************
+    DEFAULT 
+************************ */
+
+.modal-container {
+	position:relative; top:0px; left:0px; width:391px; height:200px; color:#000000; padding:0; margin:0;
+}
+
+.modal-body-login-link {
+	position:relative; top:0px; left:0px; line-height:30px;
+}
+
+.modal-body-login-link a {
+	vertical-align:middle; color:#000000;
+}
+
+.modal-body-login-link a:hover {
+	
+}
+
+.img-control {
+	position:relative; top:0px; left:0px; width:100%; height:auto;
+}
+
+.img-control img {
+	width:100%; height:auto;
+}
+
+/* Nico - clearing floats - NOT always needed so can be deleted PRIOR to UPLOAD */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.clearfix:after { clear: both; }  
+.clearfix { zoom: 1; }  
+
+@media handheld, only screen and (max-width: 380px) {
+	.modal-container { width:100%; }
+}
+
+
+
+
+
